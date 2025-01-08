@@ -1,85 +1,156 @@
-# Reconhecimento Facial - Projeto Panorama
+# 👤 Projeto Panorama - Reconhecimento Facial
 
-Um sistema de reconhecimento facial desenvolvido em Python, utilizando técnicas modernas de visão computacional e aprendizado de máquina.
+## 📋 Sobre o Projeto
 
-## 📋 Descrição
+Sistema de reconhecimento facial desenvolvido em Python com interface gráfica em Kivy/KvLang para Windows. O projeto implementa funcionalidades de detecção e reconhecimento facial em tempo real.
 
-Este projeto implementa um sistema de reconhecimento facial que pode ser utilizado para identificar e verificar pessoas em imagens e vídeos. O sistema utiliza bibliotecas modernas de processamento de imagem e deep learning para garantir alta precisão no reconhecimento.
+## 🚀 Tecnologias Utilizadas
 
-## 🚀 Funcionalidades
-
-- Detecção facial em imagens e vídeos
-- Reconhecimento e identificação de faces
-- Interface web para visualização e gerenciamento
-- Armazenamento de dados em banco de dados
-- Sistema de treinamento para novos rostos
-
-## 💻 Tecnologias Utilizadas
-
-- Python (54.6%)
-- HTML (45.4%)
-- Bibliotecas principais:
-  - OpenCV para processamento de imagem
-  - dlib para detecção facial
-  - Flask para interface web
-  - MySQL para banco de dados
+- **Python:** 60.1%
+- **KvLang:** 39.9%
+- **Banco de Dados:** MYSQL
+- **Interface Gráfica:** Kivy Framework
 
 ## 📁 Estrutura do Projeto
-reconhecimento_facial-projeto-panorama/
-├── **pycache**/
-├── database/
-├── lib/
-├── templates/
-├── db.py
-├── detection.py
-├── eigen.py
-├── main.py
-├── requirements.txt
-├── training.py
-└── views.py
+```plaintext
+projeto-panorama/
+├── assets/            # Recursos e ativos do projeto
+├── database/         # Arquivos relacionados ao banco de dados
+├── lib/              # Arquivos de biblioteca e dependências
+├── project/          # Código-fonte principal do projeto
+├── ponto.csv         # Arquivo de pontos de dados
+├── requirements.txt  # Dependências do projeto
+└── LICENSE.rst       # Arquivo de licença
+```
 
 
-## 🛠️ Instalação
+## ⚙️ Pré-requisitos
+
+- Python 3.7+
+- Kivy
+- OpenCV
+- NumPy
+- dlib
+- face_recognition
+
+## 🔧 Instalação
 
 1. Clone o repositório:
-git clone https://github.com/betolara1/reconhecimento_facial-projeto-panorama.git
+   ```bash
+   git clone https://github.com/betolara1/Projeto-Panorama-Reconhecimento-Facial-Aplicativo.git
+   cd Projeto-Panorama-Reconhecimento-Facial-Aplicativo
+```
+
+2. Crie e ative um ambiente virtual:
+
+```shellscript
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
 
 
-2. Instale as dependências:
+3. Instale as dependências:
 
+```shellscript
 pip install -r requirements.txt
+```
 
 
-3. Configure o banco de dados:
-db.py
 
 
-4. Execute o aplicativo:
-python main.py
+## 💻 Funcionalidades
+
+- Detecção facial em tempo real
+- Reconhecimento facial
+- Interface gráfica intuitiva
+- Armazenamento de dados faciais
+- Registro de pontos faciais
+- Exportação de dados em CSV
 
 
-## 🔧 Configuração
+## 🎯 Como Usar
 
-1. Certifique-se de ter Python 3.7+ instalado
-2. Configure as variáveis de ambiente necessárias
-3. Prepare o conjunto de dados para treinamento
-4. Execute o script de treinamento antes do primeiro uso
+1. Execute o aplicativo principal:
+
+```shellscript
+python project/main.py
+```
 
 
-## 📚 Como Usar
+2. Na interface do aplicativo:
 
-1. Inicie o servidor web executando `main.py`
-2. Acesse a interface web através do navegador
-3. Faça o cadastro do usuario e captura seu rosto clicando em cadastrar
-4. Abrir pagina de login, onde será realizado a verificação do rosto cadastrado
-5. Clicar em 'gerar relatório' para gerar um relatório com o nome e a data em que foi feito o check-in 
+1. Selecione a fonte de vídeo (webcam ou arquivo)
+2. Aguarde a detecção facial
+3. Siga as instruções na tela para cadastro/reconhecimento
 
+
+
+
+
+## 📊 Pontos Faciais
+
+O sistema utiliza o arquivo `ponto.csv` para armazenar os pontos faciais detectados. A estrutura do arquivo inclui:
+
+- Coordenadas dos pontos faciais
+- Timestamps
+- Identificadores únicos
+
+
+## 🔒 Segurança
+
+- Os dados faciais são armazenados localmente
+- Não há envio de dados para servidores externos
+- Recomenda-se backup regular do banco de dados
+
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. Faça um Fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
+3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/NovaFeature`)
+5. Abra um Pull Request
 
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
+Este projeto está sob a licença MIT. Veja o arquivo `LICENSE.rst` para mais detalhes.
 
-## ✒️ Autor
+## ⚠️ Requisitos de Sistema
 
-- **Roberto Lara** - [betolara1](https://github.com/betolara1)
+- Sistema Operacional: Windows 7 ou superior
+- Memória RAM: 4GB ou superior
+- Webcam (para captura em tempo real)
+- Processador: Intel Core i3 ou superior
+
+
+## 🔍 Troubleshooting
+
+Se encontrar problemas:
+
+1. Verifique se todas as dependências estão instaladas
+2. Confirme se sua webcam está funcionando corretamente
+3. Verifique as permissões de acesso à câmera
+4. Consulte os logs de erro em `project/logs`
+
+
+## 👤 Autor
+
+- GitHub: [@betolara1](https://github.com/betolara1)
+
+
+## 📞 Suporte
+
+Para suporte:
+
+- Abra uma issue no GitHub
+- Consulte a documentação em `docs/`
+- Entre em contato com o desenvolvedor
+
+
+---
+
+⭐️ Se este projeto te ajudou, considere dar uma estrela no GitHub!
