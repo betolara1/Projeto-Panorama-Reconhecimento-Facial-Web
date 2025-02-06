@@ -6,10 +6,10 @@ Sistema de reconhecimento facial desenvolvido em Python com interface gráfica e
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Python:** 60.1%
-- **KvLang:** 39.9%
+- **Python:** 54.6%
+- **HTML:** 45.4%
 - **Banco de Dados:** MYSQL
-- **Interface Gráfica:** Kivy Framework
+- **Interface Gráfica:** Flask
 
 ## 📁 Estrutura do Projeto
 ```plaintext
@@ -27,7 +27,7 @@ projeto-panorama/
 ## ⚙️ Pré-requisitos
 
 - Python 3.7+
-- Kivy
+- Flask
 - OpenCV
 - NumPy
 - dlib
